@@ -23,7 +23,6 @@ public class EditActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
-        startService(new Intent(getBaseContext(), MyIntentService.class));
         this.title = (EditText)findViewById(R.id.editText);
         this.body = (EditText)findViewById(R.id.editText2);
         this.guardar = (Button)findViewById(R.id.button);
